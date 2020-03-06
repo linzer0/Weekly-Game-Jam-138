@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class FinishState : MonoBehaviour
 {
-        void OnCollisionEnter2D(Collision2D collision)
+        void OnTriggerEnter2D(Collider2D collider)
         {
-                GameObject gameObject = collision.gameObject;
+                GameObject gameObject = collider.gameObject;
                 if (gameObject.tag == "Player")
                 {
                         int lootCount = GameObject.FindGameObjectsWithTag("Loot").Length;

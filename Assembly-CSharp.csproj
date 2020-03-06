@@ -51,9 +51,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\CanvasTurnOn.cs" />
+     <Compile Include="Assets\Scripts\DoorMovement.cs" />
      <Compile Include="Assets\Scripts\FinishState.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Guard.cs" />
+     <Compile Include="Assets\Scripts\LootRotation.cs" />
+     <Compile Include="Assets\Scripts\MiniGame.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
  <Reference Include="UnityEngine.CoreModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>

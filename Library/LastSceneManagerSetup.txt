@@ -1,4 +1,4 @@
 sceneSetups:
-- path: C:/Users/linar/Desktop/1DShadowMapDemo (1)/Assets/demo.unity
+- path: Assets/Scenes/finalLevel.unity
   isLoaded: 1
   isActive: 1

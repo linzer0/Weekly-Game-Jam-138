@@ -12,6 +12,6 @@ public class GameManager : MonoBehaviour
 
         public static void NextLevel()
         {
-                Debug.Log("Next level");
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 }
