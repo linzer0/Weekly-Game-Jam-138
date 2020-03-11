@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+        [SerializeField] private FieldOfView fieldOfView;
         public static Player player;
 
         public float movementSpeed = 10.0f;
@@ -24,6 +25,7 @@ public class Player : MonoBehaviour
 
         void Start()
         {
+                
                 if (isAvel)
                         ChangeColor();
                 rigidbody = GetComponent<Rigidbody2D>();
@@ -43,6 +45,9 @@ public class Player : MonoBehaviour
 
         void FixedUpdate()
         {
+                Vector3 originPosition = this.transform.position;
+                fieldOfView.SetOrigin(originPosition);
+
                 if (isAvel)
                         ChangeColor();
                 float move = Input.GetAxis("Horizontal") * movementSpeed;
